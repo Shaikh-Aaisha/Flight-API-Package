@@ -11,7 +11,7 @@ class AeroDataBoxService
         $client = new Client();
         $response = $client->request('GET', 'https://aerodatabox.p.rapidapi.com/flights/'.$searchby.'/'.$parameter, [
             'headers' => [
-                'X-RapidAPI-Key' => 'a823371777msh1860fe373302d88p1fd032jsn1544b8fa913c',
+                'X-RapidAPI-Key' => env('RAPID_API_KEY'),
             ],
         ]);
         $data = $response->getBody()->getContents();
