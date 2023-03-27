@@ -7,7 +7,7 @@
 
 #### Steps
 
----php
+```php
 Route::post('/flights-status-nearest',[FlightController::class,'flight']);//nearest flight
 Route::post('/flights-status-byDate',[FlightController::class,'flightbyDate']);//nearest flight by date
 Route::post('/flights-status-bydepartureDate',[FlightController::class,'flightdeparturedate']);//flight departure with date
